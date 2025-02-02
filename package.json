@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "btoa": "^1.2.1",
     "cra-template": "1.2.0",
     "leaflet": "^1.9.4",
     "react": "^19.0.0",
