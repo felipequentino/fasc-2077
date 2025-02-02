@@ -1,0 +1,16 @@
+.about{
+    
+}
+
+.video{
+    width: 99vw;
+    background-color: rgb(0, 0, 0,0.9);
+    z-index: -1;
+}
+
+.fact1,.fact2{
+    z-index: 1;
+    background-color: rgb(0, 0, 0,0.3);
+}
+  
+  
