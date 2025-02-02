@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getArtistByName, getSpotifyTrack } from '../services/api';
+import styles from "./ArtistList.module.css"
 
 const ArtistList = () => {
     const [artist, setArtist] = useState(null);
@@ -37,31 +38,31 @@ const ArtistList = () => {
     if (!artist) return <div>Artista não encontrado</div>;
   
     return (
-      <div className="artist-container">
-        <img src={artist.imgUrl} alt={artist.name} className="artist-image" />
-        <h1>{artist.name}</h1>
-        <p className="artist-description">{artist.description}</p>
+      <div className={styles.artist_container}>
+        <img src={artist.imgUrl} alt={artist.name} className={styles.artist_img}/>
         
-        {trackId ? (
-          <div className="spotify-embed">
-            <iframe
-              title={`Música do ${artist.name}`}
-              src={`https://open.spotify.com/embed/track/${trackId}`}
-              width="300"
-              height="380"
-              frameBorder="0"
-              allow="encrypted-media"
-              loading="lazy"
-            ></iframe>
-          </div>
-        ) : (
-          <p>Nenhuma música encontrada no Spotify</p>
-        )}
-  
-        <div className="show-info">
-          <p>Data: {new Date(artist.startDate).toLocaleDateString()}</p>
-          <p>Horário: {new Date(artist.startDate).toLocaleTimeString()} - {new Date(artist.endDate).toLocaleTimeString()}</p>
-          <p>Local: {artist.location}</p>
+
+        <div className={styles.artist_details}>
+            <h1>{artist.name}</h1>
+            <p className={styles.artist_descripition}>{artist.description}</p>
+            <div className={styles.show_info}>
+                <p>Data: {new Date(artist.startDate).toLocaleDateString()}</p>
+                <p>Horário: {new Date(artist.startDate).toLocaleTimeString()} - {new Date(artist.endDate).toLocaleTimeString()}</p>
+                <p>Local: {artist.location}</p>
+            </div>
+            {trackId ? (
+              <div className={styles.spotify_embed}>
+                <iframe
+                  title={`Música do ${artist.name}`}
+                  src={`https://open.spotify.com/embed/track/${trackId}`}
+                  frameBorder="0"
+                  allow="encrypted-media"
+                  loading="lazy"
+                ></iframe>
+              </div>
+            ) : (
+              <p>Nenhuma música encontrada no Spotify</p>
+            )}
         </div>
       </div>
     );

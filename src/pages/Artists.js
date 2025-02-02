@@ -5,16 +5,29 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getShows } from '../services/api';
+import { getArtistByName } from '../services/api';
+import { useParams } from 'react-router-dom';
+import styles from "./Artists.module.css"
 
 const Artists = () => {
   const [shows, setShows] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [artist, setArtist] = useState(null);
+  const { artistName } = useParams();
 
   useEffect(() => {
     const fetchShows = async () => {
       try {
         const data = await getShows();
         setShows(data);
+        
+        const artistData = await getArtistByName(artistName);
+        if (!artistData) {
+          setLoading(false);
+          return;
+        }
+        setArtist(artistData);
+
       } catch (error) {
         console.error("Erro ao buscar shows:", error);
       } finally {
@@ -23,17 +36,20 @@ const Artists = () => {
     };
 
     fetchShows();
-  }, []);
+  }, [artistName]);
 
   if (loading) return <div>Carregando artistas...</div>;
 
   return (
-    <div className="artists-grid">
+    <div className={styles.artist_grid}>
       {shows.map((show) => (
-        <div key={show.name} className="artist-card">
-          <img src={show.imgUrl} alt={show.name} className="artist-thumbnail" />
+        <div key={show.name} className={styles.artist_card}>
+          <img src={show.imgUrl} alt={show.name} className={styles.artist_thumbnail} />
           <h2>{show.name}</h2>
-          <Link to={`/artists/${encodeURIComponent(show.name)}`} className="cta-button">
+          <p className="artist-description">{show.description}</p>
+          <p><img src='images/time.png' alt='date'/> {new Date(show.startDate).toLocaleDateString()} | {new Date(show.startDate).toLocaleTimeString()} - {new Date(show.endDate).toLocaleTimeString()}</p>
+          <p><img src='images/local.png' alt='local'/>{show.location}</p>
+          <Link to={`/artists/${encodeURIComponent(show.name)}`} className={styles.cta_button}>
             Ver Detalhes
           </Link>
         </div>
