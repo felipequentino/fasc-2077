@@ -1,9 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import styles from "./Navigation.module.css"
 
 function Navigation() {
     return (
-      <nav style={{ padding: '1rem', background: '#f0f0f0' }}>
+      <nav className={styles.navigation}>
         <NavLink to="/" style={{ margin: '0 1rem' }} activeStyle={{ fontWeight: 'bold' }}>
           Home
         </NavLink>

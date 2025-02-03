@@ -46,10 +46,10 @@ const ArtistList = () => {
             <h1>{artist.name}</h1>
             <p className={styles.artist_descripition}>{artist.description}</p>
             <div className={styles.show_info}>
-                <p>Data: {new Date(artist.startDate).toLocaleDateString()}</p>
-                <p>Horário: {new Date(artist.startDate).toLocaleTimeString()} - {new Date(artist.endDate).toLocaleTimeString()}</p>
+                <p>{new Date(artist.startDate).toLocaleDateString()} | {new Date(artist.startDate).toLocaleTimeString()} - {new Date(artist.endDate).toLocaleTimeString()}</p>
                 <p>Local: {artist.location}</p>
-            </div>
+
+                <p>Confira o maior Hit do artista:</p>
             {trackId ? (
               <div className={styles.spotify_embed}>
                 <iframe
@@ -63,6 +63,7 @@ const ArtistList = () => {
             ) : (
               <p>Nenhuma música encontrada no Spotify</p>
             )}
+            </div>
         </div>
       </div>
     );

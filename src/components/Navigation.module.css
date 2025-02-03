@@ -1,0 +1,23 @@
+.navigation{
+    padding: 1rem;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.navigation a{
+    text-align: center;
+    text-decoration: none;
+    background-color: darkgray;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    width: 10rem;
+    transition: 0.5s;
+}
+
+.navigation a:hover{
+    background-color: black;
+    transition: 0.5s;
+}
