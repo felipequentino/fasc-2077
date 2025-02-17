@@ -13,8 +13,8 @@ function App() {
   return (
     <Router>
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-        <Header />
-        <Navigation />
+        {/* <Header /> */}
+        {/* <Navigation /> */}
         <main style={{ flex: '1' }}>
           <Routes>
             <Route path="/" element={<Home />} />

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Flavors&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.home_header{
+    height: 100vh;
+    position: static;
+    background-image:linear-gradient(rgba(93, 70, 70, 0.5), rgba(0, 0, 0, 0.5)), url(https://publicacao.saocristovao.se.gov.br/storage/post/confira-a-programacao-completa-do-festival-de-artes-de-sao-cristovao-2022-11-09-636bb1d0efedb.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home_artists{
+    background-color: darkorange;
+    height: 100vh;
+}
+
+.home_stages{
+    background-color: rgb(27, 4, 116);
+    height: 100vh;
+    font-family: "Flavors",serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.home_stages h1{
+    text-align: center;
+    padding: 1em;
+    color: gold;
+    font-size: 66px;
+    font-family: "Flavors",serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.home_stages span{
+    color: deeppink;
+}
+
+.stages{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    margin-top: 1em;
+}
+
+
+.samba_na_bica,.musica_na_igreja,.joao_bebe_agua,.frei_santa_cecilia{
+    
+    height: fit-content;
+    box-shadow: 0px 2px 10px 2px;
+    background: none;
+    border-radius: 0px 0px 15px 15px;
+    
+    img{
+        width: 20vw;
+        height: 40vh;
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    img:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+
+.samba_na_bica p{
+    display: flex;
+    background-color: chocolate;
+    border-radius: 15px 15px 0px 0px ;
+    text-align: center;
+    font-size: 32px;
+    height: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.musica_na_igreja p{
+    display: flex;
+    background-color: gold;
+    border-radius: 15px 15px 0px 0px ;
+    text-align: center;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+}
+
+.frei_santa_cecilia p{
+    display: flex;
+    background-color: deeppink;
+    border-radius: 15px 15px 0px 0px ;
+    text-align: center;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+}
+
+.joao_bebe_agua p{
+    display: flex;
+    background-color: deepskyblue;
+    border-radius: 15px 15px 0px 0px ;
+    text-align: center;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+}
