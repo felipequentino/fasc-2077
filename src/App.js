@@ -7,7 +7,7 @@ import ArtistList from './components/ArtistList';
 import Artists from './pages/Artists';
 import Home from './pages/Home';
 import About from './pages/About';
-import Map from './pages/Map';
+import PageMap from './pages/PageMap';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/map" element={<Map />} />
+            <Route path="/map" element={<PageMap />} />
             <Route path="/artists" element={<Artists />} />
             <Route path="/artists/:artistName" element={<ArtistList />} />
           </Routes>
