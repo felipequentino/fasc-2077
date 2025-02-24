@@ -1,0 +1,51 @@
+
+.artist_container{
+    font-family: "Space Grotesk", serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 85vw;
+    height: 75vh;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.artist_details{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    font-size: 1.3rem;
+    padding: 1em;
+    padding-left: 1.5em;
+    border-radius: 15px;
+}
+
+.artist_details h1{
+    display: flex;
+    font-size: 3rem;
+    color: white;
+    padding-bottom: 1em;
+    justify-self: center;
+}
+
+.artist_details p{
+    color: rgb(228, 219, 219);
+    padding-bottom: 1em;
+}
+
+.artist_img{
+    display: flex;
+    justify-content: start;
+    width: 45vw;
+    border-radius: 50px;
+    height: 70vh;
+}
+
+.spotify_embed iframe{
+    width: 30vw;
+    height: 30vh;
+}

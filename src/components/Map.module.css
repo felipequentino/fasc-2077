@@ -1,0 +1,267 @@
+/* Container principal com o fundo original do site */
+.mapContainer {
+    font-family: "Space Grotesk", sans-serif;
+    background: url('../../public/images/body-BG.png') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Cabeçalho do mapa */
+  .mapHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #2c3e50;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mapHeader h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  
+  /* Display de tempo simulado */
+  .timeDisplay {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .timer {
+    font-family: 'Space Mono', monospace;
+    font-size: 2.5rem;
+    color: #96FF01;
+    letter-spacing: 2px;
+  }
+  
+  .highlightText {
+    color: white;
+    font-weight: bold;
+  }
+
+  .timeDisplay span {
+    display: block;
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeDisplay small {
+    color: #cccccc;
+    font-size: 0.8rem;
+  }
+  
+  /* Layout principal dividindo o mapa e a programação */
+  .layoutContainer {
+    display: flex;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  /* Seção do mapa */
+  .mapSection {
+    flex: 3;
+  }
+  
+  .mapWrapper {
+    height: 600px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ffffff;
+  }
+  
+  .leafletContainer {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Seção da programação (timeline) */
+  .timelineSection {
+    flex: 2;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-height: 800px;
+    overflow-y: auto;
+  }
+  
+  .timelineHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .daySelector span {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .daySelector .activeDay {
+    background: #2c3e50;
+    color: white;
+  }
+  
+  .timelineContent {
+    padding: 1rem;
+  }
+  
+  .daySchedule {
+    margin-bottom: 2rem;
+  }
+  
+  .daySchedule h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .timelineCard {
+    position: relative;
+    background: white;
+    border-left: 4px solid;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .timelineCard:hover {
+    transform: translateX(5px);
+  }
+  
+  .activeShow {
+    border-left-color: #96FF01 !important;
+    background: #f8fff0;
+  }
+  
+  .timeBadge {
+    background: #2c3e50;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+  }
+  
+  .stageTag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    color: white;
+    margin-top: 0.5rem;
+  }
+  
+  .liveBadge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff4757;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    animation: pulse 1.5s infinite;
+  }
+  
+  /* Link para cada entrada da timeline */
+  .timelineLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
+  /* Rodapé do mapa */
+  .mapFooter {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    color: #2c3e50;
+  }
+  
+  .mapFooter p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .mapFooter small {
+    font-size: 0.8rem;
+    color: #666666;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .mapHeader h1 {
+      font-size: 1.8rem;
+    }
+    
+    .mapWrapper {
+      height: 400px;
+      width: 95%;
+    }
+    
+    .timer {
+      font-size: 1.8rem;
+    }
+    
+    .mapFooter p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .layoutContainer {
+      flex-direction: column;
+    }
+    
+    .mapSection, .timelineSection {
+      width: 100%;
+      max-width: 100%;
+    }
+    
+    .timelineSection {
+      max-height: 400px;
+    }
+  }
+  
+  .calendarContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.calendarDay {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.calendarDay:hover {
+  background-color: #ddd;
+}
+
+.selected {
+  background-color: #1976d2;
+  color: white;
+}

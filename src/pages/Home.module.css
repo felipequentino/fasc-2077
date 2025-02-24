@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Flavors&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../../public/images/body-BG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.home_header{
+    height: 160vh;
+    position: static;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Space Grotesk", serif;
+}
+
+.home_artists{
+    height: 100vh;
+}
+
+.home_stages{
+    height: 180vh;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Space Grotesk", serif;
+}
+
+.home_stages h1{
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+    font-size: 96px;
+    font-style: normal;
+    color: white;
+}
+
+.stages{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    margin-top: 1em;
+}
+
+.musica_na_igreja, .frei_santa_cecilia, .joao_bebe_agua, .samba_na_bica{
+    display: grid;
+    padding: 0;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 50vh;
+}
+
+.musica_na_igreja button{
+    background-color: #96FF01;
+    width: 20vw;
+    height: 4em;
+    border-radius: 0px 0px 15px 15px;
+    margin: auto;
+    border: none;
+}
+
+.joao_bebe_agua button{
+    background-color: #FF7200;
+    width: 20vw;
+    height: 4em;
+    border-radius: 0px 0px 15px 15px;
+    margin: auto;
+    border: none;
+}
+
+.frei_santa_cecilia button{
+    background-color: #00FFFF;
+    width: 20vw;
+    height: 4em;
+    border-radius: 0px 0px 15px 15px;
+    margin: auto;
+    border: none;
+}
+
+.samba_na_bica button{
+    background-color: #F5E901;
+    width: 20vw;
+    height: 4em;
+    border-radius: 0px 0px 15px 15px;
+    margin: auto;
+    border: none;
+}
+.musica_na_igreja a, .joao_bebe_agua a, .frei_santa_cecilia a, .samba_na_bica a{
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+}
+
+.musica_na_igreja p , .joao_bebe_agua p , .samba_na_bica p , .frei_santa_cecilia p{
+    background-color: white;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 20vw;
+    height: 15vh;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+}
+
+.musica_na_igreja h2{
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    background-color: #96FF01;
+    width: 20vw;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    color: white;
+}
+
+.joao_bebe_agua h2{
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    background-color: #FF7200;
+    width: 20vw;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    color: white;
+}
+
+.samba_na_bica h2{
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    background-color: #F5E901;
+    width: 20vw;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    color: white;
+}
+
+.frei_santa_cecilia h2{
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    background-color: #00FFFF;
+    width: 20vw;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    color: white;
+}
+
+.stages_title{
+    width: 20vw;
+    height: 50vh;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+
+.home_stages_top_img{
+    width: 99vw;
+    padding: 0;
+}
+
+.home_header_wallpaper{
+    width: 80vw;
+    display: flex;
+    justify-self: center;
+    padding: 5em;
+}
+
+.home_header_artists{
+    max-width: 60vw;
+    min-width: 60vw;
+    justify-self: center;
+}
+
+.carroussel{
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.home_header_title{
+    width: 30vw;
+    display: flex;
+    justify-self: center;
+}
+
+.home_header_artists img{
+    width: 20vw;
+    scroll-snap-align: center;
+}
+
+.home_footer_img{
+    width: 99vw;
+    height: 50vh;
+    padding: 0;
+}
+
+.home_footer_partnaires {
+    width: 96vw;
+}
