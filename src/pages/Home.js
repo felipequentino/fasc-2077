@@ -5,48 +5,82 @@ import Navigation from '../components/Navigation'
 function Home() {
   return (
     <div>
-      <div className={styles.home_header}>
-          <img src='https://www.saocristovao.se.gov.br/img/timbrados-SC-2025-450x85-prefSC-02.png'  alt=''/>
+      <section className={styles.home_header}>
+          <img className={styles.home_header_wallpaper} src='images/wallpaper.png' alt='wallpaper'/>
 
-          <Navigation/>
-      </div>
+          <img className={styles.home_header_title} src='images/many-shows.png' alt=''/>
 
-      <div className={styles.home_stages}>
+          <div className={styles.home_header_artists}>
+            <div className={styles.carroussel}>
+              <img src='images/Charli-XCX.png' alt='charlixcx'/>
+              <img src='images/Taylor-Swift.png' alt='taylorswift'/>
+              <img src='images/linkin-park.png' alt='linkinpark'/>
+              <img src='images/Pablo-Vittar.png' alt='pablovittar'/>
+              <img src='images/Jao.png' alt='jao'/>
+              <img src='images/Calcinha-Preta.png' alt='calcinhapreta'/>
+              <img src='images/much-more.png' alt='muitomais'/>
+            </div> 
+          </div>
+      </section>
 
-          <h1>Nossos <span>Palcos</span></h1>
+      <section className={styles.home_stages}>
+
+          <img className={styles.home_stages_top_img} src='images/fasc-symbols.png' alt='fasc-symbols'/>
+          <h1>NOSSOS PALCOS</h1>
 
           <div  className={styles.stages}>
             <div className={styles.musica_na_igreja}>
-                <p>Musica na Igreja</p>
-                <img src='https://portalbrasil.com.br/wp-content/uploads/2018/08/Festival-de-Artes-de-Sao-Cristovao-768x577.jpg' alt='musica_na_igreja'/>
+                <h2>MUSICA NA IGREJA</h2>
+                <img className={styles.stages_title} src='images/igreja.png' alt=''/>
+                <p>
+                  A Igreja de Nossa Senhora do Rosário dos Homens Pretos foi construída em 1746 pela irmandade de negros da cidade. Irmandades...
+                </p>
+                <button>
+                  <a href=''>SAIBA MAIS</a>
+                </button>
             </div>
 
             <div className={styles.samba_na_bica}>
-                <p>Samba na Bica</p>
-                <img src='https://i1.wp.com/avozdacidade.com/wp/wp-content/uploads/2019/06/A-15-CF-TEM%C3%81TICA-Samba-da-Jurema-acontece-no-pr%C3%B3ximo-domingo.jpg?fit=640%2C427&ssl=1' alt='samba_na_bica'/>
+                <h2>SAMBA NA BICA</h2>
+                <img className={styles.stages_title} src='images/sambanabica.png' alt=''/>
+                <p>
+                  Popularmente conhecida como Bica dos Pintos, esse espaço natural é uma grande referência em São Cristóvão quando o assunto é turismo...
+                </p>
+                <button>
+                  <a href=''>SAIBA MAIS</a>
+                </button>
             </div>
 
             <div className={styles.joao_bebe_agua}>
-                <p>João Bebe Água</p>
-                <img src='https://publicacao.saocristovao.se.gov.br/laravel-filemanager/photos/17/VictorBalde_Fasc2023_Dia3_Groundation-Selecao-18.jpg' alt='joao_bebe_agua'/>
+                <h2>JOÃO BEBE ÁGUA</h2>
+                <img className={styles.stages_title} src='images/Joaobbagua.png' alt=''/>
+                <p>
+                  Palco em homenagem a João Bebe-Água, que foi presidente da Câmara dos Vereadores de São Cristóvão e líder de uma Irmandade de Amparo dos...
+                </p>
+                <button>
+                  <a href=''>SAIBA MAIS</a>
+                </button>
             </div>
 
             <div className={styles.frei_santa_cecilia}>
-                <p>Frei Santa Cecília</p>
-                <img src='https://publicacao.saocristovao.se.gov.br/storage/post/fasc-encerra-neste-domingo-com-grandes-atracoes-nacionais-e-internacionais-confira-a-programacao-completa-2024-12-01-674c913b70d43.jpeg' alt='frei_santa_cecilia'/>
+                <h2>FREI SANTA CECÍLIA</h2>
+                <img className={styles.stages_title} src='images/freisantacecilia.png' alt=''/>
+                <p>
+                  Descrito poeticamente pelo historiador Manoel dos Passos de Oliveira Telles, na sua primeira edição de 1903, em termos como: “Sua estatura...
+                </p>
+                <button>
+                  <a href=''>SAIBA MAIS</a>
+                </button>
             </div>
           </div>
           
-      </div>
+      </section>
 
-      <div className={styles.home_artists}>
-          <h1>O QUE VAI TOCAR</h1>
+      <div className={styles.home_footer}>
 
-          <div>
-              
-          </div>
-
-          <h2>E MUITO MAIS...</h2>
+        <img className={styles.home_footer_img} src='images/footer.png' alt=''/> 
+        <img className={styles.home_footer_partnaires} src='images/partnairs.png' alt=''/>
+      
       </div>
     </div>
   );

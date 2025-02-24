@@ -43,9 +43,10 @@ const ArtistList = () => {
         
 
         <div className={styles.artist_details}>
-            <h1>{artist.name}</h1>
-            <p className={styles.artist_descripition}>{artist.description}</p>
+            
             <div className={styles.show_info}>
+                <h1>{artist.name}</h1>
+                <p className={styles.artist_descripition}>{artist.description}</p>
                 <p>{new Date(artist.startDate).toLocaleDateString()} | {new Date(artist.startDate).toLocaleTimeString()} - {new Date(artist.endDate).toLocaleTimeString()}</p>
                 <p>Local: {artist.location}</p>
 

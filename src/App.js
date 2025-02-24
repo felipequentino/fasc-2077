@@ -11,9 +11,10 @@ import Map from './pages/Map';
 
 function App() {
   return (
+  
     <Router>
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-        {/* <Header /> */}
+        <Header />
         {/* <Navigation /> */}
         <main style={{ flex: '1' }}>
           <Routes>

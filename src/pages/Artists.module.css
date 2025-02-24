@@ -1,5 +1,4 @@
 
-
 .artist_grid{
     width: 90vw;
     margin: auto;
@@ -25,11 +24,7 @@
     h2{
         width: 20vw;
         font-size: 20px;
-    }
-    
-    h2,p,a,label{
         padding-left: 10px;
-        padding-right: 10px;
     }
     
     a{
@@ -58,6 +53,10 @@
         justify-content: start;
         font-weight: 700;
     }
+
+    .artist_description {
+        padding: 10px;
+    }
     
     p img{
         width: 1.2em;
@@ -69,5 +68,6 @@
 .artist_thumbnail{
     width: 20vw;
     height: 25vh;
+    padding: 0;
     border-radius: 10px 10px 0px 0px;
 }

@@ -1,5 +1,46 @@
 .header {
     padding: 1rem;
-    background-color: #282c34;
+    background-color: #000000;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img{
+    width: 10em;
+    padding: 1em;
+}
+
+.header_left_side{
+    display: flex;
+    align-items: center;
+    font-family: "Space Grotesk", serif;
+}
+
+.header_right_side{
+    display: flex;
+    align-items: center;
+    font-family: "Space Grotesk", serif;
+}
+
+.header_right_side a{
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 5em;
+    height: 2em;
+    text-align: center;
+    color: white;
+    margin-right: 1em;
+    background-image: url(../../public/images/orangeBG.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header_right_side a:hover{
+    color: black;
 }

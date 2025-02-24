@@ -46,7 +46,7 @@ const Artists = () => {
         <div key={show.name} className={styles.artist_card}>
           <img src={show.imgUrl} alt={show.name} className={styles.artist_thumbnail} />
           <h2>{show.name}</h2>
-          <p className="artist-description">{show.description}</p>
+          <p className={styles.artist_description}>{show.description}</p>
           <p><img src='images/time.png' alt='date'/> {new Date(show.startDate).toLocaleDateString()} | {new Date(show.startDate).toLocaleTimeString()} - {new Date(show.endDate).toLocaleTimeString()}</p>
           <p><img src='images/local.png' alt='local'/>{show.location}</p>
           <Link to={`/artists/${encodeURIComponent(show.name)}`} className={styles.cta_button}>
