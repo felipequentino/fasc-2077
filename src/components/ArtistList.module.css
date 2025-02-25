@@ -49,3 +49,239 @@
     width: 30vw;
     height: 30vh;
 }
+
+@media (max-width:1240px) {
+
+    .artist_details h1{
+        padding-bottom: 0.2em;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+}
+
+@media (max-width:1024px) {
+    .artist_container{
+        display: grid;
+        height: fit-content;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .artist_img{
+        margin: auto;
+        height: 50vh;
+        width: 60vw;
+    }
+
+    .artist_details{
+        padding: 0;
+        display: grid;
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .artist_details h1{
+        padding-bottom: 1em;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .spotify_embed iframe{
+        width: 80vw;
+        display: flex;
+        justify-self: center;
+    }
+}
+
+@media (max-width:768px) {
+    .artist_container{
+        display: grid;
+        height: fit-content;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .artist_img{
+        margin: auto;
+        height: 40vh;
+        width: 50vw;
+    }
+
+    .artist_details{
+        padding: 0;
+        display: grid;
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .artist_details h1{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .spotify_embed iframe{
+        width: 80vw;
+        display: flex;
+        justify-self: center;
+    }
+}
+
+@media (min-width:426px) and (max-width:650px) {
+    .artist_container{
+        display: grid;
+        height: fit-content;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .artist_img{
+        height: 40vh;
+        width: 80vw;
+    }
+
+    .artist_details{
+        padding: 0;
+        display: grid;
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .artist_details h1{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .spotify_embed iframe{
+        width: 80vw;
+        display: flex;
+        justify-self: center;
+    }
+}
+
+@media (max-width:426px) {
+    .artist_container{
+        display: grid;
+        height: fit-content;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .artist_img{
+        height: 30vh;
+        width: 80vw;
+    }
+
+    .artist_details{
+        padding: 0;
+        display: grid;
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .artist_details h1{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .spotify_embed iframe{
+        width: 80vw;
+        display: flex;
+        justify-self: center;
+    }
+}
+
+@media (max-width:376px) {
+    .artist_container{
+        display: grid;
+        height: fit-content;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .artist_img{
+        height: 30vh;
+        width: 80vw;
+    }
+
+    .artist_details{
+        padding: 0;
+        display: grid;
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .artist_details h1{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .spotify_embed iframe{
+        width: 80vw;
+        display: flex;
+        justify-self: center;
+    }
+}
+
+@media (max-width:321px) {
+    .artist_container{
+        display: grid;
+        height: fit-content;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .artist_img{
+        height: 30vh;
+        width: 80vw;
+    }
+
+    .artist_details{
+        padding: 0;
+        display: grid;
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .artist_details h1{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .spotify_embed iframe{
+        width: 80vw;
+        display: flex;
+        justify-self: center;
+    }
+}

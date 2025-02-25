@@ -69,6 +69,11 @@ export const getShows = async () => {
   return response.json();
 };
 
+export const getStages = async () => {
+  const response = await fetch('https://fasc2025.onrender.com/palcos');
+  return response.json();
+};
+
 export const getArtistByName = async (name) => {
   const shows = await getShows();
   return shows.find(show => show.name === name);

@@ -53,6 +53,7 @@ const Artists = () => {
             Ver Detalhes
           </Link>
         </div>
+         
       ))}
     </div>
   );

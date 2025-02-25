@@ -22,6 +22,10 @@ function Header() {
             ARTISTAS
           </NavLink>
           
+          <NavLink to="/palcos" style={{ margin: '0 1rem' }} activeStyle={{ fontWeight: 'bold' }}>
+            PALCOS
+          </NavLink>
+
           <NavLink to="/" style={{ margin: '0 1rem' }} activeStyle={{ fontWeight: 'bold' }}>
             HOME
           </NavLink>

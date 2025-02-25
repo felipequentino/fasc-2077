@@ -17,6 +17,9 @@ function Navigation() {
         <NavLink to="/artists" style={{ margin: '0 1rem' }} activeStyle={{ fontWeight: 'bold' }}>
           Artistas
         </NavLink>
+        <NavLink to="/palcos" style={{ margin: '0 1rem' }} activeStyle={{ fontWeight: 'bold' }}>
+          Palcos
+        </NavLink>
       </nav>
     );
   }
